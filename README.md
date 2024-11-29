@@ -1,18 +1,19 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
+const Livraria = ({Descrição}) => {
 
-<View style ={styles.card}>
-<View style={styles.livro}>
+<View style ={styles.Caixa}>
+<View style={styles.Cabeçalho}>
     </View>
-<Text style = {styles.label}> Livros Disponiveis </Text>
-
-
+<Text style = {styles.Descrição}> 
+  Livros abaixo
+</Text>
 </View>
 
-
+}
 
 const styles = StyleSheet.create({
-    card: {
+    Caixa: {
         backgroundColor: '#fff',
         padding: 15,
         borderRadius: 10,
@@ -22,15 +23,27 @@ const styles = StyleSheet.create({
         elevation: 3,
         marginVertical: 10
     },
-    livro: {
+    Cabeçalho: {
         flex: 1,
         backgroundColor: 'lightred',
         padding: 16
       },
-      label: {
+      Descrição: {
         fontSize: 16,
         fontWeight: 'bold',
         margemBottom: 8
     
-      }
+    },
+
+    CaixaLivros: {
+      backgroundColor: '#fff',
+      padding: 15,
+      borderRadius: 5,
+      shadowColor: '#000',
+      shadowOpacity: 0.1,
+      shadowRadius: 5,
+      elevation: 2,
+      marginVertical: 5
+  }
 })
+export default Livraria
