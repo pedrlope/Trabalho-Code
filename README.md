@@ -1,19 +1,27 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const Livraria = ({Descrição}) => {
-
-<View style ={styles.Caixa}>
-<View style={styles.Cabeçalho}>
+export default function Biblioteca(){
+//const Livraria = ({ descrição }) => {
+  return(
+    <View style={styles.caixa}>
+        <View style={styles.cabeçalho}>
+        </View>
+        <Text style={styles.descrição}>
+            Livraria
+        </Text>
+        <View style={styles.cabeçalho}>
+        </View>
+        <Text style={styles.descrição}>
+            Livros abaixo
+        </Text>
     </View>
-<Text style = {styles.Descrição}> 
-  Livros abaixo
-</Text>
-</View>
-
+    
+  )
+//}
 }
 
 const styles = StyleSheet.create({
-    Caixa: {
+    caixa: {
         backgroundColor: '#fff',
         padding: 15,
         borderRadius: 10,
@@ -23,27 +31,27 @@ const styles = StyleSheet.create({
         elevation: 3,
         marginVertical: 10
     },
-    Cabeçalho: {
+    cabeçalho: {
         flex: 1,
         backgroundColor: 'lightred',
         padding: 16
-      },
-      Descrição: {
+    },
+    descrição: {
         fontSize: 16,
         fontWeight: 'bold',
-        margemBottom: 8
-    
+        marginBottom: 8
+
     },
 
-    CaixaLivros: {
-      backgroundColor: '#fff',
-      padding: 15,
-      borderRadius: 5,
-      shadowColor: '#000',
-      shadowOpacity: 0.1,
-      shadowRadius: 5,
-      elevation: 2,
-      marginVertical: 5
-  }
+    caixalivros: {
+        backgroundColor: '#fff',
+        padding: 15,
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 5,
+        elevation: 2,
+        marginVertical: 5
+    }
 })
 export default Livraria
