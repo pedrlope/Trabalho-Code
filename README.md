@@ -1,13 +1,13 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function Biblioteca(){
-//const Livraria = ({ descrição }) => {
+
+const Livraria = ({ descrição }) => {
   return(
     <View style={styles.caixa}>
         <View style={styles.cabeçalho}>
         </View>
         <Text style={styles.descrição}>
-            Livraria
+            Livro: {Title} = livros
         </Text>
         <View style={styles.cabeçalho}>
         </View>
@@ -17,8 +17,8 @@ export default function Biblioteca(){
     </View>
     
   )
-//}
 }
+
 
 const styles = StyleSheet.create({
     caixa: {
